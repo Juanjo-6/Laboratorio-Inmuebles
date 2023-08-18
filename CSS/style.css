@@ -1,0 +1,256 @@
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.custom-navbar {
+    background-color: rgba(36, 51, 69, 0.96);
+}
+.custom-navbar #menu{
+    height: 100px;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color linear 0.5s;
+}
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.4s; /* Navbar inicialmente transparente */
+}
+.navbar.navbar-transparent .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-scrolled .navbar-nav .nav-link {
+  color: white; /* Color del texto cuando el navbar cambia de color */
+}
+
+.navbar-scrolled {
+  background-color: rgba(36, 51, 69, 0.96); 
+}
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; 
+}
+.container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+}
+.container {
+    padding-top: 150px;
+}
+.custom-row {
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+.custom-row img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.custom-row img:first-child {
+    margin-bottom: 10px;
+}
+
+  
+/* Estilos adicionales para la sección */
+.logo-image-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+  
+
+.logo-image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 5px; 
+  }
+  
+  /* Estilos adicionales para la imagen */
+.image {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.slogan {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+
+.image-section {
+  position: relative;
+  padding: 130px 0; 
+  margin-bottom: 100px; 
+  text-align: center;
+}
+.image-section img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.image-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos para el slogan */
+.image-section .slogan {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333; /* Color del texto */
+}
+.img-enlarge {
+  width: 60%; 
+  margin-top: -65px; 
+}
+.image-animation {
+  opacity: 0; 
+  animation: fadeIn 1.5s ease-in-out forwards; 
+}
+
+/* Animación para desvanecer las imágenes */
+@keyframes fadeIn {
+  to {
+    opacity: 1; 
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+/* Estilos para el segundo section con fondo creativo */
+.project-details-section {
+  position: relative;
+  background: linear-gradient(to bottom right, rgba(0, 51, 102, 0.8), rgba(73, 50, 64, 0.8)), url("../imas/seccionImagen.jpg"); /* Gradiente semitransparente + imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 50px 0;
+  text-align: center;
+  color: white; 
+}
+.project-details-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.project-details-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.carousel-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%; /* Ajusta el tamaño de las imágenes del carrusel */
+  height: 450px;
+  border-radius: 15px;
+  transition: opacity 0.5s ease;
+} 
+.carousel-inner .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); /* Cambia los valores de los colores y opacidad según lo desees */
+}
+
+
+
+.footer {
+  background-color: rgba(36, 51, 69, 0.96);
+  color: #fff; 
+  padding: 30px 0; 
+}
+
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px; 
+
+}
+.social-icon {
+  font-size: 24px; 
+  color: #efb810; 
+  margin-right: 10px; 
+}
+
+
+.footer h4 {
+  font-size: 20px; 
+  margin-bottom: 15px; 
+}
+
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+.mision-vision-section {
+  margin-bottom: 610px;
+}
+.icono-dorado {
+  color: #efb810; 
+  font-size: 2rem;
+  margin-bottom: 10px; 
+}
+
+.titulo-dorado {
+  color: #efb810; /* Color dorado en formato hexadecimal */
+}
+
+#formulario-registro {
+  /* Estilos para el fondo y el texto */
+  background-color:  rgba(36, 51, 69, 0.96);
+  color: white;
+}
+
+.formulario-section {
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('../imas/imagenForm.jpg'); /* Ruta de tu imagen de fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#formulario-registro input,
+#formulario-registro textarea {
+  background-color: #fff;
+  color: #efb810;
+  border: 2px solid #efb810;
+}
+
+th,td{
+	font-size: 17px;
+	padding: 5px ;
+	color: white;
+    	font-family: 'Oswald', sans-serif;
+}
+th{
+	background-color: transparent;
+}
+td{
+	background-color: skyblue;
+	font-size: 14px;
+}
+
+
+
